@@ -31,8 +31,13 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
+    
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    
     defaultConfig {
-        minSdkVersion 18
+        minSdkVersion 17
     }
 }
 
